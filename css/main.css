@@ -104,12 +104,16 @@ textarea {
   h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.875em;
+    font-weight: 500;
   }
 
   h3, 
   h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.125em;
+    font-weight: 500;
+    font-size: 1.875em;
+    margin: 20px 0;
   }
 
   p {
@@ -130,6 +134,32 @@ textarea {
     font-style: normal;
   }
 
+  aside .form {
+    margin-top: 30px;
+  }
+   
+  input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+    padding: 1em;
+  }
+   
+  input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
   /*---------------- Base Header --------------*/ 
   header,
   footer {
@@ -141,6 +171,7 @@ textarea {
 
   header {
     padding: 15px 0;
+    background: #202322;
   }
   
   header .content-wrapper {
@@ -157,6 +188,8 @@ textarea {
     align-items: center;
     flex-flow: row wrap;
     width: 60%;
+    font-weight: 600;
+    text-transform: uppercase;
   }
 
   nav {
@@ -167,6 +200,10 @@ textarea {
     display: flex;
     justify-content: space-around;
     width: 100%;
+  }
+
+  header nav ul li {
+    font-size: 1.125em;
   }
 
   .header-divider {
@@ -196,10 +233,8 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-  }
-
-  aside .description h3 {
-    padding-top: 30px;
+    background:#527158;
+    color: white;
   }
 
   .features {
@@ -214,6 +249,7 @@ textarea {
 
   .features p {
     margin: 0;
+    text-align: center;
   }
 
   .features article {
@@ -232,6 +268,8 @@ textarea {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    background: #2a423a;
+    color: #fff;
   }
 
   .reviews h3 {
@@ -242,6 +280,8 @@ textarea {
 
   footer {
     flex-direction: column;
+    background: #202322;
+    color: #fff;
   }
 
   footer .content-wrapper {
@@ -263,6 +303,7 @@ textarea {
 
   footer .copyright {
     margin: 10px 0;
+    text-align: center;
   }
 
 
@@ -273,6 +314,8 @@ textarea {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background: #527158;
+  color: #fff;
   }
 
   .contact-section {
@@ -280,6 +323,8 @@ textarea {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background: #2a423a;
+  color: #fff;
   }
 
 .faq {
@@ -287,6 +332,8 @@ textarea {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background: #527158;
+  color: #fff;
   }
 
 .faq .content-wrapper {
@@ -452,7 +499,7 @@ textarea {
       }
    
       .features .features-item-description {
-        width: 50%;
+        width: 62%;
       }
    
       /* Reviews */
@@ -518,6 +565,7 @@ textarea {
 
   .faq h2 {
     width: 100%;
+    font-size: 3em;
   }
 
     }
@@ -531,10 +579,13 @@ textarea {
         max-width: 960px;
       }
 
+      p {
+        font-size: 1.125em;
+      }
 
     /* ---- Hero ---- */    
       .hero-area h1 {
-        padding-top: 0;
+        font-size: 3.75em;
         width: 60%;
       }
 
@@ -562,10 +613,20 @@ textarea {
         width: 40%;
       }
 
+      .reviews h2 {
+        padding-bottom: 50px;
+      }
+
+      .reviews h3 {
+        width: 75%;
+        margin: 0;
+      }
+
     /* ---- About Page ---- */ 
       .mission h2,
       .contact-section .content-wrapper h2 {
         width: 90%;
+        font-size: 3em;
       }
 
     /* ---- Faq Page ---- */ 
