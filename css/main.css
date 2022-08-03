@@ -573,6 +573,7 @@ textarea {
 
       .reviews h3 {
         width: 75%;
+        margin: 0;
       }
       
       .reviews article div {
