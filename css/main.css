@@ -95,6 +95,15 @@ textarea {
   body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
+    color: #e2e3ed;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  figure {
+    margin: 0;
   }
 
   h1 {
@@ -112,7 +121,6 @@ textarea {
     font-family: 'Poppins', sans-serif;
     font-size: 1.125em;
     font-weight: 500;
-    font-size: 1.875em;
     margin: 20px 0;
   }
 
@@ -167,11 +175,11 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #202322;
   }
 
   header {
     padding: 15px 0;
-    background: #202322;
   }
   
   header .content-wrapper {
@@ -182,18 +190,23 @@ textarea {
     margin: 0;
   }
 
+  header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
   header nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
     width: 60%;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 1.125em;
     text-transform: uppercase;
-  }
-
-  nav {
-    padding: 20px 0;
   }
 
   header nav ul {
@@ -208,6 +221,9 @@ textarea {
 
   .header-divider {
     width: 100%;
+    background: #3a3a3a;
+    height: 1px;
+    margin: 10px 0 20px 0;
   }
 
 /* ------------ Mid Section Base Styles -------------*/ 
@@ -218,14 +234,20 @@ textarea {
   }
 
   .hero-area {
+    background: url("../img/jake-melara-30679-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-flow: row wrap;
   }
 
   .hero-area h1 {
-    padding-top: 55px;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 2.25em;
+    line-height: 1.2;
   }
 
   aside {
@@ -238,6 +260,9 @@ textarea {
   }
 
   .features {
+    background: url("../img/rawpixel-800820-unsplash1.jpg");
+    background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -280,13 +305,17 @@ textarea {
 
   footer {
     flex-direction: column;
-    background: #202322;
     color: #fff;
+    text-align: center;
   }
 
   footer .content-wrapper {
     width: 55%;
     margin: 50px 0;
+  }
+
+  footer .contact {
+    margin-bottom: 50px;
   }
 
   footer .social-icons {
@@ -443,9 +472,24 @@ textarea {
     /*Tablet styles here*/
         /* General styles */
 
-        .content-wrapper {
+      .content-wrapper {
         max-width: 640px;
         margin: 100px 0;
+      }
+
+      h2 {
+        font-size: 2.25em;
+        line-height: 1.33;
+      }
+
+      h3,
+      h4 {
+        font-size: 1.875em;
+        line-height: 1.25;
+      }
+
+      figure {
+        width: 49%;
       }
    
       /* Header */
@@ -457,6 +501,10 @@ textarea {
       header .content-wrapper {
         width: 100%;
         justify-content: space-between;
+      }
+
+      header figure {
+        width: 30%;
       }
    
       header nav {
@@ -472,6 +520,16 @@ textarea {
       }
    
       /* Hero Area */
+
+      .hero-area {
+        min-height: 600px;
+      }
+
+      .hero-area h1 {
+        font-size: 3em;
+        line-height: 1;
+        margin: 0;
+      }
    
       /* Aside */
       aside .content-wrapper {
@@ -501,11 +559,20 @@ textarea {
       .features .features-item-description {
         width: 62%;
       }
+
+      .features h2 {
+        margin-bottom: 20px;
+        line-height: 1.33;
+      }
    
       /* Reviews */
       .reviews article {
         display: flex;
         justify-content: space-between;
+      }
+
+      .reviews h3 {
+        width: 75%;
       }
       
       .reviews article div {
@@ -532,6 +599,10 @@ textarea {
         width: 100%;
       }
 
+      footer h4 {
+        margin-bottom: 40px;
+      }
+
       /* ========== About Page ========== */
     .mission-content {
       display: flex;
@@ -554,6 +625,10 @@ textarea {
       align-items: center;
     }
 
+    .contact-content h4 {
+      font-size: 1.5em;
+    }
+
     /* ========== Faq page =========== */
     .faq .content-wrapper {
     justify-content: space-between;
@@ -565,11 +640,15 @@ textarea {
 
   .faq h2 {
     width: 100%;
-    font-size: 3em;
+    font-size: 2.25em;
+  }
+
+  .faq h4, p {
+    font-size: .875em;
+    line-height: 1.125;
   }
 
     }
-
      
     @media only screen and (min-width: 1200px) {
     /*Desktop styles here*/
@@ -586,7 +665,7 @@ textarea {
     /* ---- Hero ---- */    
       .hero-area h1 {
         font-size: 3.75em;
-        width: 60%;
+        width: 80%;
       }
 
     /* ---- Aside ---- */ 
@@ -594,14 +673,14 @@ textarea {
         justify-content: space-around;
       }
 
-      aside .content-wrapper .form-description,
+      aside .content-wrapper .description,
       aside .content-wrapper .form {
         width: 30%;
       }
     
     /* ---- Features ---- */ 
       .features h2 {
-        width: 85%;
+        width: 90%;
       }
 
       .features article {
@@ -629,9 +708,18 @@ textarea {
         font-size: 3em;
       }
 
+      .contact-content h4 {
+        font-size: 1.875em;
+      }
+
     /* ---- Faq Page ---- */ 
       .faq h2 {
         width: 100%;
+        font-size: 3em;
+      }
+
+      .faq h4 {
+        font-size: 1.125em;
       }
 
 
