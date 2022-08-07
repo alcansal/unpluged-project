@@ -325,11 +325,19 @@ textarea {
 
   footer .social-icons {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   }
 
+  .social-icons i {
+    font-size: 1.3125em;;
+  }
+
   footer .social p {
+    height: 40px;
+    width: 40px;
+    background: #527158;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -612,6 +620,11 @@ textarea {
         justify-content: space-between;
         align-items: center;
       }
+
+      .social-icons {
+        width: 12.5em;
+        justify-content: space-between;
+      }
    
       footer .contact {
         margin-bottom: 0;
@@ -687,6 +700,7 @@ textarea {
 
       p {
         font-size: 1.125em;
+        line-height: 1.333;
       }
 
     /* ---- Hero ---- */    
